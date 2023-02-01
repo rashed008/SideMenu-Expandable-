@@ -15,9 +15,9 @@
 		CE275EBA2988E42E00A0FBE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE275EB82988E42E00A0FBE0 /* LaunchScreen.storyboard */; };
 		CE275EC82988EBBC00A0FBE0 /* HeaderCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE275EC32988EBBC00A0FBE0 /* HeaderCVCell.swift */; };
 		CE275EC92988EBBC00A0FBE0 /* MenuCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE275EC42988EBBC00A0FBE0 /* MenuCVCell.swift */; };
-		CE275ECA2988EBBC00A0FBE0 /* HeaderCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE275EC52988EBBC00A0FBE0 /* HeaderCVCell.xib */; };
 		CE275ECB2988EBBC00A0FBE0 /* MenuCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE275EC62988EBBC00A0FBE0 /* MenuCVCell.xib */; };
 		CE275ECD2988EC1900A0FBE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE275ECC2988EC1900A0FBE0 /* ViewController.swift */; };
+		CE43D491298A3641009A08D6 /* HeaderCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE43D490298A3641009A08D6 /* HeaderCVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		CE275EBB2988E42E00A0FBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE275EC32988EBBC00A0FBE0 /* HeaderCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCVCell.swift; sourceTree = "<group>"; };
 		CE275EC42988EBBC00A0FBE0 /* MenuCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCVCell.swift; sourceTree = "<group>"; };
-		CE275EC52988EBBC00A0FBE0 /* HeaderCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCVCell.xib; sourceTree = "<group>"; };
 		CE275EC62988EBBC00A0FBE0 /* MenuCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCVCell.xib; sourceTree = "<group>"; };
 		CE275ECC2988EC1900A0FBE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE43D490298A3641009A08D6 /* HeaderCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderCVCell.xib; path = ../../SideMenuController/HeaderCVCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,29 +66,12 @@
 		CE275EAC2988E42D00A0FBE0 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				CE91F7EA298A359100AEB204 /* Controller */,
+				CE91F7E9298A358A00AEB204 /* View */,
 				CE275ECE2988F4D500A0FBE0 /* UiViewExtension */,
-				CE275EC12988EBA300A0FBE0 /* SideMenuController */,
-				CE275EAD2988E42D00A0FBE0 /* AppDelegate.swift */,
-				CE275EAF2988E42D00A0FBE0 /* SceneDelegate.swift */,
-				CE275EB12988E42D00A0FBE0 /* SideMenuController.swift */,
-				CE275ECC2988EC1900A0FBE0 /* ViewController.swift */,
-				CE275EB32988E42D00A0FBE0 /* Main.storyboard */,
-				CE275EB62988E42E00A0FBE0 /* Assets.xcassets */,
-				CE275EB82988E42E00A0FBE0 /* LaunchScreen.storyboard */,
-				CE275EBB2988E42E00A0FBE0 /* Info.plist */,
+				CE43D492298A366B009A08D6 /* Resources */,
 			);
 			path = SideMenu;
-			sourceTree = "<group>";
-		};
-		CE275EC12988EBA300A0FBE0 /* SideMenuController */ = {
-			isa = PBXGroup;
-			children = (
-				CE275EC32988EBBC00A0FBE0 /* HeaderCVCell.swift */,
-				CE275EC52988EBBC00A0FBE0 /* HeaderCVCell.xib */,
-				CE275EC42988EBBC00A0FBE0 /* MenuCVCell.swift */,
-				CE275EC62988EBBC00A0FBE0 /* MenuCVCell.xib */,
-			);
-			path = SideMenuController;
 			sourceTree = "<group>";
 		};
 		CE275ECE2988F4D500A0FBE0 /* UiViewExtension */ = {
@@ -96,6 +79,63 @@
 			children = (
 			);
 			path = UiViewExtension;
+			sourceTree = "<group>";
+		};
+		CE43D492298A366B009A08D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE275EBB2988E42E00A0FBE0 /* Info.plist */,
+				CE275EAD2988E42D00A0FBE0 /* AppDelegate.swift */,
+				CE275EAF2988E42D00A0FBE0 /* SceneDelegate.swift */,
+				CE275EB82988E42E00A0FBE0 /* LaunchScreen.storyboard */,
+				CE43D493298A36DD009A08D6 /* AssetCatelog */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE43D493298A36DD009A08D6 /* AssetCatelog */ = {
+			isa = PBXGroup;
+			children = (
+				CE275EB62988E42E00A0FBE0 /* Assets.xcassets */,
+			);
+			path = AssetCatelog;
+			sourceTree = "<group>";
+		};
+		CE91F7E9298A358A00AEB204 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE91F7EC298A359F00AEB204 /* storyboard */,
+				CE91F7EB298A359C00AEB204 /* Xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE91F7EA298A359100AEB204 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE275ECC2988EC1900A0FBE0 /* ViewController.swift */,
+				CE275EB12988E42D00A0FBE0 /* SideMenuController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE91F7EB298A359C00AEB204 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				CE43D490298A3641009A08D6 /* HeaderCVCell.xib */,
+				CE275EC32988EBBC00A0FBE0 /* HeaderCVCell.swift */,
+				CE275EC42988EBBC00A0FBE0 /* MenuCVCell.swift */,
+				CE275EC62988EBBC00A0FBE0 /* MenuCVCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		CE91F7EC298A359F00AEB204 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CE275EB32988E42D00A0FBE0 /* Main.storyboard */,
+			);
+			path = storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +200,7 @@
 				CE275ECB2988EBBC00A0FBE0 /* MenuCVCell.xib in Resources */,
 				CE275EB72988E42E00A0FBE0 /* Assets.xcassets in Resources */,
 				CE275EB52988E42D00A0FBE0 /* Main.storyboard in Resources */,
-				CE275ECA2988EBBC00A0FBE0 /* HeaderCVCell.xib in Resources */,
+				CE43D491298A3641009A08D6 /* HeaderCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AR23ZCHW2B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SideMenu/Info.plist;
+				INFOPLIST_FILE = SideMenu/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -357,7 +397,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AR23ZCHW2B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SideMenu/Info.plist;
+				INFOPLIST_FILE = SideMenu/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

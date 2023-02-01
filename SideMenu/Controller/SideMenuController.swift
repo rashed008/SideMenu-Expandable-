@@ -16,7 +16,7 @@ class SideMenuController: UIViewController {
     var SideMenuHeaderArr = Array<String>()
     var SideMenuDataArr = Array<Array<String>>()
     var isCollapsible = Array<Bool>()
-    var indexo = [1,1]
+    var index = [1,1]
     var menuSelection: ((Array<Int>)->())?
     var yPosition: CGFloat = 0
     var isOpen: Bool = false
@@ -57,14 +57,14 @@ class SideMenuController: UIViewController {
     @objc func handleTap(sender: UITapGestureRecognizer) {
         isCollapsible[sender.view!.tag] = !isCollapsible[sender.view!.tag]
         colSidemenu.reloadSections(IndexSet(integer: sender.view!.tag))
-        indexo[1] = 0
-        indexo[0] = sender.view!.tag + 1
+        index[1] = 0
+        index[0] = sender.view!.tag + 1
         
         sender.view!.rippleEffect {
-            if !(self.SideMenuDataArr[self.indexo[0] - 1].count >= 1) {
+            if !(self.SideMenuDataArr[self.index[0] - 1].count >= 1) {
                 self.hideSideMneu()
             }
-            self.menuSelection?(self.indexo)
+            self.menuSelection?(self.index)
         }
     }
     
@@ -158,14 +158,14 @@ extension SideMenuController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        indexo[1] = indexPath.row + 1
+        index[1] = indexPath.row + 1
         let cell = colSidemenu.cellForItem(at: indexPath)
         cell!.rippleEffect {
             self.hideSideMneu()
-            self.menuSelection?(self.indexo)
+            self.menuSelection?(self.index)
         }
         
-        //        NotificationCenter.default.post(name: Notification.Name("SideMenuTap"), object: indexo)
+        //        NotificationCenter.default.post(name: Notification.Name("SideMenuTap"), object: index)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
